@@ -20,7 +20,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://localhost:5177",
-      "https://stremly.onrender.com",
+      "https://stremly-1.onrender.com",
       process.env.CLIENT_URL,
     ].filter(Boolean),
     credentials: true, // allow frontend to send cookies
