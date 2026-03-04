@@ -17,7 +17,12 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5177"],
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5177",
+      "https://stremly.onrender.com",
+      process.env.CLIENT_URL,
+    ].filter(Boolean),
     credentials: true, // allow frontend to send cookies
   })
 );
